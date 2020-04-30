@@ -8,7 +8,7 @@ namespace ConsoleApp18
 {
     class Class1
     {
-        //private fields - name, hometown birthay fav number
+        //private fields
         //these start with a lower case letter
         private string movie;
         private string genre;
