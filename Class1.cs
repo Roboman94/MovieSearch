@@ -61,9 +61,9 @@ namespace ConsoleApp18
         //an objects properties value once the object is created.
         public Class1()
         {
-            movie = "Impreza";
-            genre = "Subaru";
-            year = "2011";
+            movie = "invalid";
+            genre = "invalid";
+            year = "invalid";
 
         }
         public Class1(string _movie, string _genre, string _year)
