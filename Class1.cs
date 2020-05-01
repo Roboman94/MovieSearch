@@ -13,6 +13,7 @@ namespace ConsoleApp18
         private string movie;
         private string genre;
         private string year;
+        private string validcheck;
 
 
         //public properties
@@ -83,18 +84,25 @@ namespace ConsoleApp18
             {
                 Console.WriteLine($"{movie} is from {genre} ");
                 Console.WriteLine($"this movie was made in {year} ");
-                i = 0;
+                i = 2;
                
             }
-            else { i = 1; }
-            if (i != 0){ 
-                Console.WriteLine("The input you provided is invalid. Please try again!");
-                i = 2;
-                
-            }
+           
 
         }
-           
+
+        public bool ValidCheck(int i, bool validcheck)
+        {
+            if (i == 1)
+            {
+                validcheck = false;
+            }
+            else
+            {
+                validcheck = true;
+            }
+            return false;
+        }
      }
 
        

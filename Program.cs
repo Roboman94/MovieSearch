@@ -31,7 +31,17 @@ namespace ConsoleApp18
                     {
                        
                         movie.PrintMovieInfo(input, i);
+                        if (i == 2)
+                        {
+                            validcheck = true;
+                        }
+                        else { validcheck = false; }
+                        //attempt to store validcheck in class
+                        //movie.ValidCheck(i, validcheck);
                     }
+
+                    //attempt not good
+                    //validcheck = ValidCheck(i, validcheck);
 
                 }
                 if (i == 0) { 
