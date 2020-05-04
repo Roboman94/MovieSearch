@@ -1,0 +1,13 @@
+C:\Users\kenda\source\repos\ConsoleApp18\ConsoleApp18\bin\Debug\netcoreapp3.1\MovieSearch.exe
+C:\Users\kenda\source\repos\ConsoleApp18\ConsoleApp18\bin\Debug\netcoreapp3.1\MovieSearch.deps.json
+C:\Users\kenda\source\repos\ConsoleApp18\ConsoleApp18\bin\Debug\netcoreapp3.1\MovieSearch.runtimeconfig.json
+C:\Users\kenda\source\repos\ConsoleApp18\ConsoleApp18\bin\Debug\netcoreapp3.1\MovieSearch.runtimeconfig.dev.json
+C:\Users\kenda\source\repos\ConsoleApp18\ConsoleApp18\bin\Debug\netcoreapp3.1\MovieSearch.dll
+C:\Users\kenda\source\repos\ConsoleApp18\ConsoleApp18\bin\Debug\netcoreapp3.1\MovieSearch.pdb
+C:\Users\kenda\source\repos\ConsoleApp18\ConsoleApp18\obj\Debug\netcoreapp3.1\MovieSearch.csprojAssemblyReference.cache
+C:\Users\kenda\source\repos\ConsoleApp18\ConsoleApp18\obj\Debug\netcoreapp3.1\MovieSearch.csproj.CoreCompileInputs.cache
+C:\Users\kenda\source\repos\ConsoleApp18\ConsoleApp18\obj\Debug\netcoreapp3.1\MovieSearch.AssemblyInfoInputs.cache
+C:\Users\kenda\source\repos\ConsoleApp18\ConsoleApp18\obj\Debug\netcoreapp3.1\MovieSearch.AssemblyInfo.cs
+C:\Users\kenda\source\repos\ConsoleApp18\ConsoleApp18\obj\Debug\netcoreapp3.1\MovieSearch.dll
+C:\Users\kenda\source\repos\ConsoleApp18\ConsoleApp18\obj\Debug\netcoreapp3.1\MovieSearch.pdb
+C:\Users\kenda\source\repos\ConsoleApp18\ConsoleApp18\obj\Debug\netcoreapp3.1\MovieSearch.genruntimeconfig.cache

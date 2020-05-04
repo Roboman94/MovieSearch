@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 
 namespace ConsoleApp18
@@ -7,86 +8,61 @@ namespace ConsoleApp18
 
         class Program
         {
+        //#1 make movie class
             static void Main(string[] args)
             {
-            Class1 Movie = new Class1();
 
-
-            List<Class1> movies = new List<Class1>();
-            FillListOfMovies(movies);
-
+            //#6
+            List<Movie> movies = Movie.GetListOfMovies();
+            //7
             Console.WriteLine("Welcome to movie search engine!");
-            bool validcheck = false;
-            bool proceed = true;
-            int i = 0;
-            while (proceed == true)
+            int cont = 1;
+            int valid = 0;
+            while (cont == 1)
             {
-                while (validcheck == false)
+                
+                Console.WriteLine("Current categories include BioPic, Action, Adventure, and Childrens:");
+                string userCategory = Movie.GetUserInfo("Search here: ");
+
+                foreach (Movie flic in movies)
                 {
-                    Console.WriteLine("Please search movie by category here..");
-                    Console.WriteLine("Current categories include BioPic, Action, Adventure, and Childrens:");
-                    string input = Console.ReadLine();
 
-                    foreach (Class1 movie in movies)
+                    if (flic.Genre == (userCategory))
                     {
-                       
-                        movie.PrintMovieInfo(input, i);
-                        if (i == 2)
-                        {
-                            validcheck = true;
-                        }
-                        else { validcheck = false; }
-                        //attempt to store validcheck in class
-                        //movie.ValidCheck(i, validcheck);
+                        Console.WriteLine(flic.Title);
+                        valid = valid+1;
+                        
                     }
-
-                    //attempt not good
-                    //validcheck = ValidCheck(i, validcheck);
+                   
 
                 }
-                if (i == 0) { 
-                proceed = Proceed();}
+                if (valid == 0)
+                {
+                    Console.WriteLine("Invalid entry! Please try again.");
+                }
+                else cont = 0;
+                if (valid >= 1)
+                {
+                    Console.WriteLine("Would you like to search again? (y/n)");
+                    string input = Console.ReadLine();
+                    if (input.Contains('y')){
+                        cont = 1;
+                    }
+                }
+               
             }
-        }
-        public static void FillListOfMovies(List<Class1> movies)
-        {
-            movies.Add(new Class1("Social Network", "BioPic", "2010"));
-            movies.Add(new Class1("Small Soldiers", "Childrens", "1994"));
-            movies.Add(new Class1("My Neighbor Totoro", "Childrens", "2001"));
-            movies.Add(new Class1("Nightmare Before Christmas", "Childrens", "2012"));
-            movies.Add(new Class1("Jobs", "BioPic", "2011"));
-            movies.Add(new Class1("Sonic", "Childrens", "2009"));
-            movies.Add(new Class1("Iron Man", "Action", "2008"));
-            movies.Add(new Class1("iRobot", "Action", "2004"));
-            movies.Add(new Class1("Martian", "Adventure", "2013"));
-            movies.Add(new Class1("Spiderman", "Action", "2002"));
-
-        }
-
-        public static bool Proceed()
-        {
-            Console.WriteLine();
-            Console.WriteLine("Would you like to continue? (y/n) ");
-            string proceed = Console.ReadLine().ToLower();
-            if (proceed.StartsWith("y"))
-            {
-                return true;
+                }
+              
             }
-            if (proceed.StartsWith("n"))
-            {
-                Console.WriteLine("thank you!");
-                Console.WriteLine();
-                return false;
-            }
-            else
-            {
-                Console.WriteLine("Invalid entry. Please try again");
-                return Proceed();
-            }
-        }
+        
 
-    }
+      
+       
 
+       
 
 }
+
+
+
 

@@ -6,21 +6,23 @@ using System.Text;
 
 namespace ConsoleApp18
 {
-    class Class1
+    class Movie
     {
+           
+        //#2
         //private fields
         //these start with a lower case letter
         private string movie;
         private string genre;
         private string year;
-        private string validcheck;
+        private bool validcheck;
 
-
+        //#3
         //public properties
         //these start with an uppercase letter - pascal case
         //bc these are public, these are used to access properties of an object
         //getters & setters
-        public string Movie
+        public string Title
         {
             get //when we call this property from an object
             {
@@ -54,22 +56,24 @@ namespace ConsoleApp18
             }
         }
 
-
-        //constructor(s)
+        //#4
+        //constructor(s) //method that allows an instance/object of our class
         //classes come with a default constructor
         //once a constructor is overloaded, it no longer exists
         //this overloaded constructor will allow...
         //an objects properties value once the object is created.
-        public Class1()
+        public Movie()
         {
-            movie = "invalid";
-            genre = "invalid";
-            year = "invalid";
+            movie = "default";
+            genre = "default";
+            year = "default";
 
         }
-        public Class1(string _movie, string _genre, string _year)
+        public Movie(string _movie, string _genre, string _year)
         {
-            movie = _movie; //setting field to value
+            //setting field to value coming from the parameters, 
+            //overloading to create on object of type movie
+            movie = _movie; 
             genre = _genre;
             year = _year;
 
@@ -78,6 +82,30 @@ namespace ConsoleApp18
         //methods
         //
         //
+
+        ///static because its using a collection of objects
+        public static string GetUserInfo(string message)
+        {
+            Console.WriteLine(message);
+            string input = Console.ReadLine();
+            return input;
+        }
+        public static List<Movie> GetListOfMovies()
+        {
+            List<Movie> movies = new List<Movie> {
+            new Movie("Social Network", "BioPic", "2010"),
+            new Movie("Small Soldiers", "Childrens", "1994"),
+            new Movie("My Neighbor Totoro", "Childrens", "2001"),
+            new Movie("Nightmare Before Christmas", "Childrens", "2012"),
+            new Movie("Jobs", "BioPic", "2011"),
+            new Movie("Sonic", "Childrens", "2009"),
+            new Movie("Iron Man", "Action", "2008"),
+            new Movie("iRobot", "Action", "2004"),
+            new Movie("Martian", "Adventure", "2013"),
+            new Movie("Spiderman", "Action", "2002")
+            };
+            return movies;
+        }
         public void PrintMovieInfo(string input, int i)
         {
             if (input.Contains(genre))

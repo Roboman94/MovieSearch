@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kenda\\source\\repos\\ConsoleApp18\\ConsoleApp18\\ConsoleApp18.csproj",
-      "projectName": "ConsoleApp18",
-      "projectPath": "C:\\Users\\kenda\\source\\repos\\ConsoleApp18\\ConsoleApp18\\ConsoleApp18.csproj",
+      "projectUniqueName": "C:\\Users\\kenda\\source\\repos\\ConsoleApp18\\ConsoleApp18\\MovieSearch.csproj",
+      "projectName": "MovieSearch",
+      "projectPath": "C:\\Users\\kenda\\source\\repos\\ConsoleApp18\\ConsoleApp18\\MovieSearch.csproj",
       "packagesPath": "C:\\Users\\kenda\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\kenda\\source\\repos\\ConsoleApp18\\ConsoleApp18\\obj\\",
       "projectStyle": "PackageReference",
